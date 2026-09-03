@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vitto App | TikTok Content Workflow</title>
+  <meta name="description" content="Vitto App prepares, reviews, and publishes owned TikTok content using official TikTok APIs and OAuth authorization." />
+  <meta property="og:title" content="Vitto App" />
+  <meta property="og:description" content="Authorized TikTok content workflow for owned accounts, with review, disclosure, and posting controls." />
+  <meta property="og:image" content="./assets/vitto-app-icon-1024.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="nav"><a class="brand" href="./"><span class="brand-mark">VT</span><span>Vitto App</span></a><nav><a href="./privacy/">Privacy</a><a href="./terms/">Terms</a></nav></header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">TikTok content workflow</p>
+        <h1>Vitto App</h1>
+        <p class="lead">A simple web app for preparing, reviewing, and publishing content to owned or authorized TikTok accounts through official TikTok APIs.</p>
+        <div class="actions"><a class="button primary" href="./privacy/">Privacy Policy</a><a class="button" href="./terms/">Terms of Service</a></div>
+      </div>
+      <div class="hero-card" aria-label="App preview">
+        <div class="status-pill">Sandbox-ready web app</div>
+        <h2>Publisher dashboard</h2>
+        <ul>
+          <li>TikTok Login Kit authorization</li>
+          <li>Content Posting API workflow</li>
+          <li>Manual review before publishing</li>
+          <li>Owned/authorized accounts only</li>
+          <li>Commercial disclosure support: <strong>#publi</strong></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section grid-two">
+      <div><p class="eyebrow">How it works</p><h2>Designed for safe TikTok posting workflows</h2></div>
+      <p>Vitto App helps an authorized operator connect a TikTok account with OAuth, prepare a video or media post, review the caption and disclosures, and publish only to the authorized account using TikTok's official API capabilities.</p>
+    </section>
+    <section class="section">
+      <p class="eyebrow">App screen</p><h2>Simple application flow</h2>
+      <div class="cards">
+        <article class="card"><h3>1. Connect TikTok</h3><p>The user authorizes the app through TikTok Login Kit. The app never asks for TikTok passwords.</p></article>
+        <article class="card"><h3>2. Prepare content</h3><p>The app receives or prepares caption, media URL, and disclosure text for review.</p></article>
+        <article class="card"><h3>3. Review and publish</h3><p>Content is reviewed before publishing to the authorized TikTok account through the Content Posting API.</p></article>
+      </div>
+    </section>
+    <section class="section callout"><div><p class="eyebrow">Developer review</p><h2>Official API use only</h2><p>The app is built for web use, OAuth authorization, sandbox testing, and minimum required scopes for Login Kit and Content Posting API.</p></div><a class="button primary" href="./privacy/">View Privacy Policy</a></section>
+  </main>
+  <footer><span>© <span id="year"></span> Vitto App</span><a href="./privacy/">Privacy</a><a href="./terms/">Terms</a></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
